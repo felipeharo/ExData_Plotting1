@@ -20,6 +20,7 @@ plot1<-function(){
   global_active_power<-as.numeric(Data$Global_active_power)
   
   # plot the histogram
+  par(mfrow = c(1,1),mar=c(4,4,1,1))
   hist(global_active_power,main="Global Active Power",xlab="Global Active Power (kilowatts)",col="red")
   
   # save it as png

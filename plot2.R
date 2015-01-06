@@ -24,6 +24,7 @@ plot2<-function(){
   date<-strptime(paste(Data$Date,Data$Time),"%d/%m/%Y %H:%M:%S")
   
   # plot
+  par(mfrow = c(1,1),mar=c(4,4,1,1))
   plot(date,global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab="")
   
   # save it as png
